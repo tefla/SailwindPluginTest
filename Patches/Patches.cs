@@ -103,7 +103,9 @@ namespace MyFirstSailwindPlugin.Patches
                 
                 GoPointerButton gpButton = openWith[key];
                 
-                if(gpButton  != null){
+                if(gpButton  != null)
+                {
+                    pointer.UnStickyClick();
                     gpButton.OnActivate(pointer);
                 }
             }
